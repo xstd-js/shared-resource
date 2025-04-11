@@ -1,0 +1,40 @@
+{
+  "name": "@xstd/shared-resource",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "./index.js",
+  "scripts": {
+    "fb:build": "node fabrique/actions/cli/build.cli.js",
+    "fb:format": "prettier --write --ignore-unknown --config ./.prettierrc \"src/**/*.{js,jsx,ts,tsx,html,css,scss}\"",
+    "fb:test": "vitest",
+    "fb:test:coverage": "vitest run --coverage",
+    "fb:bench": "vitest bench",
+    "fb:typedoc": "typedoc --options typedoc.json --tsconfig tsconfig.json",
+    "fb:prod": "node fabrique/actions/cli/build-and-publish.cli.js --mode prod",
+    "fb:dev": "node fabrique/actions/cli/build-and-publish.cli.js --mode dev",
+    "fb:rc": "node fabrique/actions/cli/build-and-publish.cli.js --mode rc"
+  },
+  "description": "Helpers to build shared ressources",
+  "keywords": [],
+  "author": "Valentin Richard",
+  "license": "MIT",
+  "access": "public",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xstd-js/shared-resource.git"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "@vitest/coverage-istanbul": "^3.1.1",
+    "prettier": "^3.5.3",
+    "prettier-plugin-organize-imports": "^4.1.0",
+    "typedoc": "^0.28.2",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.1"
+  },
+  "packageManager": "yarn@4.9.1",
+  "fabrique": {
+    "version": "0.3.6",
+    "type": "lib"
+  }
+}
