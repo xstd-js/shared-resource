@@ -36,5 +36,9 @@
   "fabrique": {
     "version": "0.3.6",
     "type": "lib"
+  },
+  "dependencies": {
+    "@xstd/async-task": "^0.1.0",
+    "@xstd/block": "^1.0.0"
   }
 }

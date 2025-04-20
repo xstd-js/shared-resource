@@ -790,12 +790,53 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@xstd/async-task@npm:^0.1.0":
+  version: 0.1.0
+  resolution: "@xstd/async-task@npm:0.1.0"
+  dependencies:
+    "@xstd/custom-error": "npm:^0.1.0"
+    "@xstd/infer-event-map-of": "npm:^0.0.1"
+    "@xstd/noop": "npm:^1.0.0"
+  checksum: 10c0/aa2d8606aa32f1a00e4e2c7328e2a9131ea4bda82538365c9b99c070c009ae2610d5dea4af6b2190d98516b6d5d978202cfc08e4848ea3a13211d5caeeb6c040
+  languageName: node
+  linkType: hard
+
+"@xstd/block@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@xstd/block@npm:1.0.0"
+  checksum: 10c0/0f2b5dbeacb6c13e40f2815c2919865c13a68756b54969710aa81f847a5880e95cfb6f80d29721256b12c5d3044ac172e40145c35dab4370e00c1ed2d8b0a67e
+  languageName: node
+  linkType: hard
+
+"@xstd/custom-error@npm:^0.1.0":
+  version: 0.1.0
+  resolution: "@xstd/custom-error@npm:0.1.0"
+  checksum: 10c0/b8a61ec547de3d9a52ecceb23b2e4d69fc42dbabe5f59c6fca4b786a0c69645b6a0cd5c8f8bf4b50a4d352f8a38622162e5a56930e2078d7f5b41a2442b4c216
+  languageName: node
+  linkType: hard
+
+"@xstd/infer-event-map-of@npm:^0.0.1":
+  version: 0.0.1
+  resolution: "@xstd/infer-event-map-of@npm:0.0.1"
+  checksum: 10c0/ed8c02f1d8de3fb08e64d959ac1dda2e4350c24cb98a22a3e625ffed2644ec62de974eb7845252ce83ee0345b3cffee0e32eb480959d21729ddeca3088fcc2b4
+  languageName: node
+  linkType: hard
+
+"@xstd/noop@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@xstd/noop@npm:1.0.0"
+  checksum: 10c0/464e6647dfbeea32366eb58af5c52047e08f42cffe8c69065ffe9a3d5aaf52c9b8fb5ca08ba3782770e2040b6716577967e41873ca374212be038e27c5495f05
+  languageName: node
+  linkType: hard
+
 "@xstd/shared-resource@workspace:.":
   version: 0.0.0-use.local
   resolution: "@xstd/shared-resource@workspace:."
   dependencies:
     "@types/node": "npm:^22.14.0"
     "@vitest/coverage-istanbul": "npm:^3.1.1"
+    "@xstd/async-task": "npm:^0.1.0"
+    "@xstd/block": "npm:^1.0.0"
     prettier: "npm:^3.5.3"
     prettier-plugin-organize-imports: "npm:^4.1.0"
     typedoc: "npm:^0.28.2"
